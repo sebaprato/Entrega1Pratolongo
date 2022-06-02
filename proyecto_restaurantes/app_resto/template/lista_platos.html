@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<center> <h1>PLATOS</h1> </center>
+
+<table border="1" align="center">
+
+    <tr>
+        <td style="text-align: center ;color:blue;">PLATO</td>
+        <td style="text-align: center ;color:blue;">CATEGORIA</td>
+        <td style="text-align: center ;color:blue;">TIPO</td>
+        <td style="text-align: center ;color:blue;">PRECIO</td>
+    </tr>
+
+    {% for n in dicc_plato %}
+
+    <tr>
+
+        <td style="text-align: center ;color:red;">{{n.plato}}</td>
+        <td style="text-align: center ;color:red;">{{n.categoria}}</td>
+        <td style="text-align: center ;color:red;">{{n.tipo}}</td>
+        <td style="text-align: center ;color:red;">{{n.precio}}</td>
+
+    </tr>
+
+    {% endfor %}
+
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    {% if nombre %}
+
+    <ul>
+    {% for n in nombre %}
+        <li>Nombre: {{n.nombre}}</li>
+        <li>Categoria: {{n.categoria}}</li>
+        <li>Ubicacion: {{n.ubicacion}}</li>
+        <li>Capacidad: {{n.capacidad}}</li>
+    {% endfor %}
+    </ul>
+    {% else %}
+        <p>No se encontraron restaurantes</p>
+    {% endif %}
+
+</body>
+</html>

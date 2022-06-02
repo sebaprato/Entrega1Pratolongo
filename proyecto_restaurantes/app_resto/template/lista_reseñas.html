@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<center> <h1>RESEÑAS</h1> </center>
+
+<table border="1" align="center">
+
+    <tr>
+        <td style="text-align: center ;color:blue;">PLATO</td>
+        <td style="text-align: center ;color:blue;">SABOR</td>
+        <td style="text-align: center ;color:blue;">PRESENTACION</td>
+        <td style="text-align: center ;color:blue;">CALIDAD_PRECIO</td>
+    </tr>
+
+    {% for n in dicc_reseña %}
+
+    <tr>
+
+        <td style="text-align: center ;color:red;">{{n.plato}}</td>
+        <td style="text-align: center ;color:red;">{{n.sabor}}</td>
+        <td style="text-align: center ;color:red;">{{n.presentacion}}</td>
+        <td style="text-align: center ;color:red;">{{n.calidad_precio}}</td>
+
+    </tr>
+
+    {% endfor %}
+
+
+</table>
+
+</body>
+</html>
